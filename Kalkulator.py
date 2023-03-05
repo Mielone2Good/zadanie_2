@@ -4,7 +4,9 @@ from tkinter import *
 root = Tk()
 root.title("Kalkulator")
 root.geometry("300x400")
+root.resizable(False,False)
 root.configure(bg="#616060")
+
 expression = ""
 
 def press(num):
@@ -26,7 +28,7 @@ def wynik():
         expression = ""
     except:
 
-        equation.set(" error ")
+        equation.set(" blad ")
         expression = ""
 
 
